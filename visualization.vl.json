@@ -90,7 +90,7 @@
         },
         "tooltip": [
           {
-            "field": "Country or region",
+            "field": "properties.NAME",
             "type": "nominal",
             "title": "Country or region"
           },
