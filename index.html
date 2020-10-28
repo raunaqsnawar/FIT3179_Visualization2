@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Embedding Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+        
+        h1 {
+            color: blue;
+        }
+        
+        p {
+            color: red;
+        }
+        
+        .parent {}
+        
+        .back_image {
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #vis {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .chart-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .marks {
+            box-shadow: 0 0 10px 5px white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .main_header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            position: relative;
+            background: url("https://storage.googleapis.com/kaggle-datasets-images/894/1634/927f32f2cc2cc40d208ae384562ad743/dataset-cover.jpg") no-repeat;
+            background-position: center;
+            background-size: 1083px 200px;
+            /* backdrop-filter: blur(4px); */
+        }
+        
+        .header_text {
+            padding-top: 2%;
+            margin-right: 280px;
+            padding-left: 1%;
+        }
+        
+        .header_text h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: bolder;
+            line-height: 0;
+        }
+        
+        .header_text h2 {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main_header">
+        <div style="backdrop-filter: blur(3px);width: 1083px;">
+            <div class="header_text">
+                <h1>
+                    World Happiness Report<br/>
+                </h1>
+
+                <h2>Happiness scored according to economic production, social support, etc.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+        <br/>
+        <div id="vis" style=" padding-right: 0px;">
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var spec = "https://raw.githubusercontent.com/raunaqsnawar/FIT3179_Visualization2/main/visualization.vl.json";
+        vegaEmbed('#vis', spec).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    </script>
+</body>
+
+</html>
