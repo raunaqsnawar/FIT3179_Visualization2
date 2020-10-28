@@ -10,9 +10,8 @@
           "title": {
             "text": "World Happiness Score Analysis with Social Support by Countries",
             "subtitle": [
-              "This grpah shows the happiness score for Countries with Social support as the size of the circle.",
-              "This graph shows that Europian Countrys like Norway, Denmark etc have higher happiness score.",
-              "African Countries are having less happiness score."
+              "This map shows the happiness score for Countries with Social support as the size of the circle.",
+              "It shows that Europian Countries like Norway, Denmark etc have higher happiness score whereas african countries score low"
             ],
             "anchor": "middle"
           },
@@ -67,8 +66,8 @@
       "title": {
         "text": "World Happiness Score Analysis by Countries",
         "subtitle": [
-          "This grpah shows the happiness score for Countries with Choropleth Map.",
-          "Higher the darkness of blue color, higher the happiness score of the Country is."
+          "This map shows the happiness score for Countries using Choropleth Map.",
+          "The darker the blue color, the higher the happiness score of the Country is"
         ],
         "anchor": "middle"
       },
