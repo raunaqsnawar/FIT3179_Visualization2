@@ -40,7 +40,7 @@
             "color": {
               "field": "Score",
               "type": "quantitative",
-              "scale": {"scheme": "greens"}
+              "scale": {"scheme": "bluepurple"}
             },
             "tooltip": [
               {
